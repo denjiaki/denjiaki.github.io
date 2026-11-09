@@ -5,99 +5,209 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alef Ramirez</title>
   <meta name="description" content="Alef Ramirez, Computer Science senior at Seattle Pacific University.">
+  <meta name="theme-color" content="#2323c8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
 
-  <header>
-    <h1>Alef Ramirez</h1>
-    <p class="intro">Computer Science senior at Seattle Pacific University. Graduating Summer 2027.</p>
-    <ul class="links">
+<header class="hero">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <h1><span>Alef</span><span>Ramirez</span></h1>
+    <p class="hero-text">Computer Science senior at Seattle Pacific University. Graduating Summer 2027. I build AI tools, game mods and web apps.</p>
+    <ul class="contact">
       <li><a href="mailto:aleframirez77@gmail.com">aleframirez77@gmail.com</a></li>
       <li><a href="https://github.com/denjiaki">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/alef-ramirez-251903335/">LinkedIn</a></li>
     </ul>
-  </header>
+  </div>
+</header>
 
-  <h2>Experience</h2>
+<main>
 
-  <section class="item">
-    <h3>Margin</h3>
-    <p class="meta">AI Software Engineering Intern, Scio Consulting International. June to September 2026. Individual project.</p>
-    <p>I built Margin, an internal tool that collects team survey data on developer productivity.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/margin.png" alt="Margin screenshot"> -->
-    <div class="shot">Screenshot: Margin</div>
+  <section aria-labelledby="exp">
+    <h2 id="exp">Experience</h2>
+    <article class="feature">
+      <div>
+        <h3>Margin</h3>
+        <p class="employer">AI Software Engineering Intern, Scio Consulting International</p>
+        <p class="dates">June to September 2026</p>
+        <p class="meta"><span class="chip solo">Individual</span></p>
+        <p class="desc">I built Margin, an internal tool that collects team survey data on developer productivity.</p>
+      </div>
+      <div class="frame">
+        <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/margin.png" alt="Margin screenshot"> -->
+        <div class="shot">Screenshot: Margin</div>
+      </div>
+    </article>
   </section>
 
-  <h2>Projects</h2>
+  <section aria-labelledby="proj">
+    <h2 id="proj">Projects</h2>
+    <div class="projects">
 
-  <section class="item">
-    <h3>Infuse</h3>
-    <p class="meta">Individual project. Role: creator and developer.</p>
-    <p>Infuse is an onboarding visualization tool that I designed and built on my own.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/infuse.png" alt="Infuse screenshot"> -->
-    <div class="shot">Screenshot: Infuse</div>
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/infuse.png" alt="Infuse screenshot"> -->
+          <div class="shot">Screenshot: Infuse</div>
+        </div>
+        <h3>Infuse</h3>
+        <p class="meta"><span class="chip solo">Individual</span>Role: creator and developer</p>
+        <p class="desc">Infuse is an onboarding visualization tool that I designed and built on my own.</p>
+      </article>
+
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/home-assistant.png" alt="Home Assistant screenshot"> -->
+          <div class="shot">Screenshot: Home Assistant</div>
+        </div>
+        <h3>Home Assistant</h3>
+        <p class="meta"><span class="chip team">Team</span>Senior capstone. Role: AI, conversation and vision</p>
+        <p class="desc">Home Assistant is our capstone home robot, where I work on the rover's conversation and AI vision, help with the mobile app, and am taking over the home assistant server.</p>
+      </article>
+
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/hestia.png" alt="Hestia screenshot"> -->
+          <div class="shot">Screenshot: Hestia</div>
+        </div>
+        <h3>Hestia</h3>
+        <p class="meta"><span class="chip team">Team</span>UWB Hacks 2026. Role: team member</p>
+        <p class="desc">Hestia is a phone app our team built that runs Google's Gemma model on the device to check whether calls, images, videos and texts are real or AI generated.</p>
+      </article>
+
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/nova.png" alt="Nova screenshot"> -->
+          <div class="shot">Screenshot: Nova</div>
+        </div>
+        <h3>Nova</h3>
+        <p class="meta"><span class="chip solo">Individual</span>Work in progress. Role: creator and developer</p>
+        <p class="desc">Nova is an AI companion mod for Minecraft 1.21.1 that I grew from the open-source Steve AI project, where players give it plain requests like farming, building or guarding.</p>
+      </article>
+
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/fleet-guard.png" alt="Fleet Guard screenshot"> -->
+          <div class="shot">Screenshot: Fleet Guard</div>
+        </div>
+        <h3>Fleet Guard</h3>
+        <p class="meta"><span class="chip solo">Individual</span>Role: creator and developer</p>
+        <p class="desc">Fleet Guard is a Paseo plugin I built that keeps long Claude Code jobs moving by handing them to another model when a session limit hits.</p>
+        <a class="code-link" href="https://github.com/denjiaki/fleet-guard">See the code on GitHub</a>
+      </article>
+
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/hackathon-portal.png" alt="SPU Hackathon Portal screenshot"> -->
+          <div class="shot">Screenshot: SPU Hackathon Portal</div>
+        </div>
+        <h3>SPU Hackathon Portal</h3>
+        <p class="meta"><span class="chip solo">Individual</span>Role: full stack developer</p>
+        <p class="desc">The SPU Hackathon Portal is a web app I built where participants, judges, volunteers and admins handle check-in, judging and scores in one place.</p>
+        <a class="code-link" href="https://github.com/denjiaki/spu-hackathon-portal">See the code on GitHub</a>
+      </article>
+
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/narrative-link.png" alt="Narrative-Link screenshot"> -->
+          <div class="shot">Screenshot: Narrative-Link</div>
+        </div>
+        <h3>Narrative-Link</h3>
+        <p class="meta"><span class="chip team">Team</span>Role: database design, wireframes and developer</p>
+        <p class="desc">Narrative-Link is a creative writing desktop app where I designed the database and wireframes and built core features with my team.</p>
+        <a class="code-link" href="https://github.com/denjiaki/Narrative-Link">See the code on GitHub</a>
+      </article>
+
+      <article>
+        <div class="frame">
+          <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/neoforge-ports.png" alt="NeoForge ports screenshot"> -->
+          <div class="shot">Screenshot: NeoForge ports</div>
+        </div>
+        <h3>Minecraft NeoForge Ports</h3>
+        <p class="meta"><span class="chip solo">Individual</span>Role: developer</p>
+        <p class="desc">These are unofficial ports I made of the Tinkers' Construct, Mantle and Warium mods to NeoForge 1.21.1.</p>
+        <a class="code-link" href="https://github.com/denjiaki/tinkers-construct-neoforge-1.21.1">See the code on GitHub</a>
+      </article>
+
+    </div>
   </section>
-
-  <section class="item">
-    <h3>Home Assistant</h3>
-    <p class="meta">Team project, senior capstone. Role: AI, conversation and vision.</p>
-    <p>Home Assistant is our capstone home robot, where I work on the rover's conversation and AI vision, help with the mobile app, and am taking over the home assistant server.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/home-assistant.png" alt="Home Assistant screenshot"> -->
-    <div class="shot">Screenshot: Home Assistant</div>
-  </section>
-
-  <section class="item">
-    <h3>Hestia</h3>
-    <p class="meta">Team project, UWB Hacks 2026. Role: team member.</p>
-    <p>Hestia is a phone app our team built that runs Google's Gemma model on the device to check whether calls, images, videos and texts are real or AI generated.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/hestia.png" alt="Hestia screenshot"> -->
-    <div class="shot">Screenshot: Hestia</div>
-  </section>
-
-  <section class="item">
-    <h3>Nova</h3>
-    <p class="meta">Individual project, work in progress. Role: creator and developer.</p>
-    <p>Nova is an AI companion mod for Minecraft 1.21.1 that I grew from the open-source Steve AI project, where players give it plain requests like farming, building or guarding.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/nova.png" alt="Nova screenshot"> -->
-    <div class="shot">Screenshot: Nova</div>
-  </section>
-
-  <section class="item">
-    <h3><a href="https://github.com/denjiaki/fleet-guard">Fleet Guard</a></h3>
-    <p class="meta">Individual project. Role: creator and developer.</p>
-    <p>Fleet Guard is a Paseo plugin I built that keeps long Claude Code jobs moving by handing them to another model when a session limit hits.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/fleet-guard.png" alt="Fleet Guard screenshot"> -->
-    <div class="shot">Screenshot: Fleet Guard</div>
-  </section>
-
-  <section class="item">
-    <h3><a href="https://github.com/denjiaki/spu-hackathon-portal">SPU Hackathon Portal</a></h3>
-    <p class="meta">Individual project. Role: full stack developer.</p>
-    <p>The SPU Hackathon Portal is a web app I built where participants, judges, volunteers and admins handle check-in, judging and scores in one place.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/hackathon-portal.png" alt="SPU Hackathon Portal screenshot"> -->
-    <div class="shot">Screenshot: SPU Hackathon Portal</div>
-  </section>
-
-  <section class="item">
-    <h3><a href="https://github.com/denjiaki/Narrative-Link">Narrative-Link</a></h3>
-    <p class="meta">Team project. Role: database design, wireframes and developer.</p>
-    <p>Narrative-Link is a creative writing desktop app where I designed the database and wireframes and built core features with my team.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/narrative-link.png" alt="Narrative-Link screenshot"> -->
-    <div class="shot">Screenshot: Narrative-Link</div>
-  </section>
-
-  <section class="item">
-    <h3><a href="https://github.com/denjiaki/tinkers-construct-neoforge-1.21.1">Minecraft NeoForge Ports</a></h3>
-    <p class="meta">Individual project. Role: developer.</p>
-    <p>These are unofficial ports I made of the Tinkers' Construct, Mantle and Warium mods to NeoForge 1.21.1.</p>
-    <!-- SCREENSHOT: replace the div below with <img class="shot-img" src="images/neoforge-ports.png" alt="NeoForge ports screenshot"> -->
-    <div class="shot">Screenshot: NeoForge ports</div>
-  </section>
-
-  <footer>Alef Ramirez</footer>
 
 </main>
+
+<footer>
+  <div class="footer-inner">
+    <p>Let's talk.</p>
+    <ul class="contact">
+      <li><a href="mailto:aleframirez77@gmail.com">Email me</a></li>
+      <li><a href="https://github.com/denjiaki">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/alef-ramirez-251903335/">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var c = document.getElementById('net');
+  if (!c || !c.getContext) return;
+  var ctx = c.getContext('2d');
+  var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pts = [], w, h, dpr, mouse = { x: -9999, y: -9999 };
+
+  function size() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = c.clientWidth; h = c.clientHeight;
+    c.width = w * dpr; c.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = Math.round(Math.min(90, (w * h) / 14000));
+    pts = [];
+    for (var i = 0; i < n; i++) {
+      pts.push({ x: Math.random() * w, y: Math.random() * h,
+                 vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
+                 r: Math.random() * 1.8 + 1 });
+    }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    var link = Math.min(170, w / 6);
+    for (var i = 0; i < pts.length; i++) {
+      var p = pts[i];
+      if (!still) {
+        p.x += p.vx; p.y += p.vy;
+        if (p.x < 0 || p.x > w) p.vx *= -1;
+        if (p.y < 0 || p.y > h) p.vy *= -1;
+      }
+      for (var j = i + 1; j < pts.length; j++) {
+        var q = pts[j], dx = p.x - q.x, dy = p.y - q.y, d = Math.sqrt(dx * dx + dy * dy);
+        if (d < link) {
+          ctx.strokeStyle = 'rgba(185,188,255,' + (0.35 * (1 - d / link)) + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.stroke();
+        }
+      }
+      var md = Math.hypot(p.x - mouse.x, p.y - mouse.y);
+      if (md < 180) {
+        ctx.strokeStyle = 'rgba(255,216,74,' + (0.7 * (1 - md / 180)) + ')';
+        ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke();
+      }
+      ctx.fillStyle = md < 180 ? '#ffd84a' : 'rgba(185,188,255,0.85)';
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+    }
+    if (!still) requestAnimationFrame(draw);
+  }
+
+  c.parentElement.addEventListener('pointermove', function (e) {
+    var b = c.getBoundingClientRect(); mouse.x = e.clientX - b.left; mouse.y = e.clientY - b.top;
+    if (still) draw();
+  });
+  c.parentElement.addEventListener('pointerleave', function () { mouse.x = mouse.y = -9999; if (still) draw(); });
+  window.addEventListener('resize', function () { size(); if (still) draw(); });
+  size(); draw();
+})();
+</script>
 </body>
 </html>
