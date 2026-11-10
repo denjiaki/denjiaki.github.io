@@ -172,7 +172,7 @@ h3 {
     var(--card);
 }
 
-.shot-img { display: block; width: 100%; height: auto; }
+.shot-img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
 
 /* Featured experience */
 
